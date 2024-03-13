@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom deletion opertaion</title>
+</head>
+<body style="background-color:black; color:#fff">
+    <ul class="language">
+        <li>javascipt</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML =`${langName}`
+        document.querySelector('.language').appendChild(li)
+        
+    }
+    addLanguage("python")
+    addLanguage("typescript")
+    
+
+    function addopptilang(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addopptilang('golang')
+
+
+    // EDIT ELEMENT USING REPLACEWITH
+   const secondlang = document.querySelector("li:nth-child(2)")
+   const newli =document.createElement('li')
+   newli.textContent="mojo"
+   secondlang.replaceWith(newli)
+
+   // second
+
+
+
+// const firstlang =  document.querySelector("li:first-child")
+// firstlang.outerHTML="<li>typescript</li>"
+
+
+
+
+
+//REMOVE
+
+const lastlang = document.querySelector("li:last-child");
+lastlang.remove()
+
+
+   
+</script>
+</html>

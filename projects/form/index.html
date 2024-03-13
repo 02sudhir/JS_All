@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <form action="submit.php" method="post">
+      <h2>User Registration Form</h2>
+
+      <!-- Personal Information -->
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+
+      <label for="permanentAddress">Permanent Address:</label>
+      <textarea id="permanentAddress" name="permanentAddress" required></textarea>
+
+      <label for="status">Status:</label>
+      <input type="text" id="status" name="status" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="guardianName">Guardian Name:</label>
+      <input type="text" id="guardianName" name="guardianName" required>
+
+      <label for="guardianPhone">Guardian Phone Number:</label>
+      <input type="tel" id="guardianPhone" name="guardianPhone" required>
+
+      <label for="guardianAddress">Guardian Address:</label>
+      <textarea id="guardianAddress" name="guardianAddress" required></textarea>
+
+      <!-- Education Details -->
+      <h3>Education Details</h3>
+
+      <label for="ssscScore">SSSC Score:</label>
+      <input type="text" id="ssscScore" name="ssscScore" required>
+
+      <label for="hscScore">HSC Score:</label>
+      <input type="text" id="hscScore" name="hscScore" required>
+
+      <label for="graduationScore">Graduation Score:</label>
+      <input type="text" id="graduationScore" name="graduationScore" required>
+
+      <label for="pgScore">PG Score:</label>
+      <input type="text" id="pgScore" name="pgScore" required>
+
+      <label for="selectedScore">Selected Score:</label>
+      <input type="text" id="selectedScore" name="selectedScore" required>
+
+      <label for="course">Selected Course:</label>
+      <select id="course" name="course" required>
+        <option value="javaFullstack">Java Fullstack</option>
+        <option value="backend">Backend Development</option>
+        <option value="dataScience">Data Science</option>
+        <option value="python">Python</option>
+        <option value="ai">Artificial Intelligence</option>
+      </select>
+
+      <!-- Payment Details -->
+      <h3>Payment Details</h3>
+
+      <label for="accountHolder">Account Holder:</label>
+      <input type="text" id="accountHolder" name="accountHolder" required>
+
+      <label for="bankName">Bank Name:</label>
+      <input type="text" id="bankName" name="bankName" required>
+
+      <label for="accountType">Account Type:</label>
+      <select id="accountType" name="accountType" required>
+        <option value="savings">Savings</option>
+        <option value="current">Current</option>
+      </select>
+
+      <label for="paymentMode">Payment Mode:</label>
+      <select id="paymentMode" name="paymentMode" required>
+        <option value="netbanking">Netbanking</option>
+        <option value="upi">UPI</option>
+      </select>
+
+      <label for="upiId">UPI ID:</label>
+      <input type="text" id="upiId" name="upiId" required>
+
+      <label for="transactionId">Transaction ID:</label>
+      <input type="text" id="transactionId" name="transactionId" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

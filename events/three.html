@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        javscript our code
+    </h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+
+const sayMayname =function()  {
+        console.log("sudhir is op");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML ="best tutorials"
+    }
+
+    const changeMe = setTimeout(sayMayname, 3000);
+    document.querySelector('#stop').
+    addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log('stopped');
+    })
+//   const saydate =  function (str)  {
+//         console.log(str , Date.now());
+//     }
+//     const clearid = setInterval(saydate, 1000 , "hellos");
+
+    // clearInterval(clearid);
+</script>
+</html>

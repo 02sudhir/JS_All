@@ -1,0 +1,51 @@
+*
+{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    background: linear-gradient( to right , rgb(120, 159, 216), rgb(11, 98, 197));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box
+{
+    background-color: white;
+    width: fit-content;
+    padding: 50px;
+    box-shadow: 10px 10px  10px;
+    
+}
+
+input
+{
+    padding: 10px;
+    border-radius: 5px;
+
+}
+h1{
+    color: sandybrown;
+}
+
+
+
+
+input[type="button"]
+{
+    background-color: red;
+
+}
+
+label
+{
+    color: blue;
+    
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom Hitesh Sir G</title>
+    <style>
+        .bgbody{
+            background-color: black;
+            color: #fff;
+            margin:top ;
+            align-items: center;
+        }
+    </style>
+</head>
+<body class="bgbody">
+    <div class="parent">
+        <div class="div">monday</div>
+        <div class="div">tuesday</div>
+        <div class="div">wednesday</div>
+        <div class="div">Friday</div>
+    </div>
+</body>
+
+<script>
+  const parent =  document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children[1]);
+
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+        
+    }
+    parent.children[0,1].style.color ="orange"
+</script>
+</html>
