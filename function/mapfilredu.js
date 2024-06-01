@@ -44,9 +44,10 @@ let students =[
 ]
 
 let passedstud= students.filter((stu)=> stu.marks>35).filter((stu)=>stu.rno<3)
-
 console.log(passedstud);
 
 let sumofmarks=students.reduce((accu,curr)=>accu+curr.marks,0);
-
 console.log(sumofmarks);
+
+let score60 = students.filter((stu)=>stu.marks>40).map((stu)=>stu.name).reduce((curr,accu)=>curr+accu);
+console.log(score60);

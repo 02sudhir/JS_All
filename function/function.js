@@ -1,3 +1,5 @@
+// what is function declaraton
+
 
 
 // function DispplayOfTable()
@@ -50,3 +52,16 @@ function returnarry(getarray){
 }
 
 console.log(returnarry([100,200,300,800]));
+
+
+const square= function(nums){
+    return nums*nums
+}
+
+// console.log(square(5));
+
+function displaySqaure(fn){
+    console.log(" Square is  " +fn(5));
+}
+
+displaySqaure(square)
